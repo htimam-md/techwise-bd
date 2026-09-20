@@ -1,73 +1,134 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Articles — TechWise BD</title>
-<meta name="description" content="Browse TechWise BD's practical articles on software, browsers, Windows & PC, productivity and general technology tips.">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="canonical" href="articles.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Articles — TechWise BD</title>
 
-<link rel="stylesheet" href="css/style.css">
+  <meta name="description"
+        content="Browse TechWise BD's practical articles on software, browsers, Windows & PC, productivity and general technology tips.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="canonical" href="articles.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- ============ HEADER ============ -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
 <header class="site-header">
+
   <nav class="nav" aria-label="Primary">
 
     <a href="index.html" class="brand">
-      <svg class="brand-mark" viewBox="0 0 32 32" fill="none"
-           xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="16" cy="16" r="3.4" fill="#0F6E5C"/>
+
+      <svg class="brand-mark"
+           viewBox="0 0 32 32"
+           fill="none"
+           xmlns="http://www.w3.org/2000/svg"
+           aria-hidden="true">
+
+        <circle cx="16"
+                cy="16"
+                r="3.4"
+                fill="#0F6E5C"/>
+
         <path d="M9 16a7 7 0 0 1 14 0"
               stroke="#0F6E5C"
               stroke-width="2"
               stroke-linecap="round"/>
+
         <path d="M4.5 16a11.5 11.5 0 0 1 23 0"
               stroke="#D98E2B"
               stroke-width="2"
               stroke-linecap="round"/>
+
       </svg>
 
       <span class="brand-name">
         TechWise<span class="bd"> BD</span>
       </span>
+
     </a>
+
 
     <button class="nav-toggle"
             aria-label="Toggle menu"
             aria-expanded="false">
+
       <span></span>
+
     </button>
 
+
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="articles.html" aria-current="page">Articles</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="articles.html"
+           aria-current="page">
+          Articles
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="contact.html">
+          Contact
+        </a>
+      </li>
+
     </ul>
 
   </nav>
+
 </header>
 
 
-<!-- ============ PAGE HEADER ============ -->
+<!-- =========================================================
+     PAGE HEADER
+========================================================= -->
+
 <div class="page-header">
+
   <div class="wrap">
 
     <div class="eyebrow-line">
+
       <span class="dot"></span>
+
       Guides &amp; tutorials
+
     </div>
 
-    <h1>Articles</h1>
+
+    <h1>
+      Articles
+    </h1>
+
 
     <p>
       Practical guides on software, browsers, Windows &amp; PC,
@@ -76,14 +137,23 @@
     </p>
 
   </div>
+
 </div>
 
 
-<!-- ============ ARTICLES ============ -->
+<!-- =========================================================
+     ARTICLES
+========================================================= -->
+
 <section>
+
   <div class="wrap">
 
-    <!-- FILTER BUTTONS -->
+
+    <!-- =====================================================
+         FILTER BUTTONS
+    ====================================================== -->
+
     <div class="filter-bar"
          role="group"
          aria-label="Filter articles by category">
@@ -91,83 +161,496 @@
       <button class="filter-btn active"
               data-filter="all"
               aria-pressed="true">
+
         All articles
+
       </button>
+
 
       <button class="filter-btn"
               data-filter="software"
               aria-pressed="false">
+
         Software
+
       </button>
+
 
       <button class="filter-btn"
               data-filter="browsers"
               aria-pressed="false">
+
         Browsers
+
       </button>
+
 
       <button class="filter-btn"
               data-filter="windows-pc"
               aria-pressed="false">
+
         Windows &amp; PC
+
       </button>
+
 
       <button class="filter-btn"
               data-filter="productivity"
               aria-pressed="false">
+
         Productivity
+
       </button>
+
 
       <button class="filter-btn"
               data-filter="tech-tips"
               aria-pressed="false">
+
         Technology Tips
+
+      </button>
+
+
+      <button class="filter-btn"
+              data-filter="technology"
+              aria-pressed="false">
+
+        Technology
+
       </button>
 
     </div>
 
 
-    <!-- ARTICLE GRID -->
-    <div class="article-grid">
+    <!-- =====================================================
+         ARTICLE GRID
+    ====================================================== -->
 
-      <!-- ================= STATIC ARTICLES ================= -->
+    <div class="article-grid" id="article-grid">
 
-      <article class="article-card" data-category="software">
-        <span class="article-tag">Software</span>
-        <h3>Free vs. Paid Software: How to Actually Decide</h3>
+
+      <!-- ===================================================
+           STATIC ARTICLES
+      ==================================================== -->
+
+
+      <article class="article-card"
+               data-category="software">
+
+        <span class="article-tag">
+          Software
+        </span>
+
+        <h3>
+          Free vs. Paid Software: How to Actually Decide
+        </h3>
+
         <p>
           A simple framework for comparing free and paid tools based
           on what you need, not just the price tag.
         </p>
-        <div class="article-meta">Guide · Software</div>
+
+        <div class="article-meta">
+          Guide · Software
+        </div>
+
       </article>
 
 
-      <article class="article-card" data-category="software">
-        <span class="article-tag">Software</span>
-        <h3>How to Tell If a Download Link Is Safe</h3>
+      <article class="article-card"
+               data-category="software">
+
+        <span class="article-tag">
+          Software
+        </span>
+
+        <h3>
+          How to Tell If a Download Link Is Safe
+        </h3>
+
         <p>
           Signs that separate an official software source from a risky
           mirror, and simple checks before you click install.
         </p>
-        <div class="article-meta">Guide · Software</div>
+
+        <div class="article-meta">
+          Guide · Software
+        </div>
+
       </article>
 
 
-      <article class="article-card" data-category="software">
-        <span class="article-tag">Software</span>
-        <h3>Keeping Your Software Updated Without the Hassle</h3>
+      <article class="article-card"
+               data-category="software">
+
+        <span class="article-tag">
+          Software
+        </span>
+
+        <h3>
+          Keeping Your Software Updated Without the Hassle
+        </h3>
+
         <p>
           Why updates matter, how to tell a real update prompt from
           a fake one, and how to manage updates efficiently.
         </p>
-        <div class="article-meta">Guide · Software</div>
+
+        <div class="article-meta">
+          Guide · Software
+        </div>
+
       </article>
 
 
-      <article class="article-card" data-category="browsers">
-        <span class="article-tag">Browsers</span>
-        <h3>Understanding Browser Extensions Before You Install Them</h3>
+      <article class="article-card"
+               data-category="browsers">
+
+        <span class="article-tag">
+          Browsers
+        </span>
+
+        <h3>
+          Understanding Browser Extensions Before You Install Them
+        </h3>
+
         <p>
           What browser extensions can actually access, how to
-```
+          evaluate permissions, and what to check before installing.
+        </p>
+
+        <div class="article-meta">
+          Guide · Browsers
+        </div>
+
+      </article>
+
+
+      <article class="article-card"
+               data-category="windows-pc">
+
+        <span class="article-tag">
+          Windows &amp; PC
+        </span>
+
+        <h3>
+          Simple Ways to Keep Your Windows PC Running Smoothly
+        </h3>
+
+        <p>
+          Practical maintenance steps that can help keep a Windows
+          computer clean, responsive and easier to manage.
+        </p>
+
+        <div class="article-meta">
+          Guide · Windows &amp; PC
+        </div>
+
+      </article>
+
+
+      <article class="article-card"
+               data-category="productivity">
+
+        <span class="article-tag">
+          Productivity
+        </span>
+
+        <h3>
+          Small Productivity Improvements That Actually Help
+        </h3>
+
+        <p>
+          Simple changes to everyday computer habits that can save
+          time without requiring complicated productivity systems.
+        </p>
+
+        <div class="article-meta">
+          Guide · Productivity
+        </div>
+
+      </article>
+
+
+      <article class="article-card"
+               data-category="tech-tips">
+
+        <span class="article-tag">
+          Technology Tips
+        </span>
+
+        <h3>
+          Everyday Technology Tips Everyone Should Know
+        </h3>
+
+        <p>
+          Useful technology tips and simple checks that can make
+          everyday computer use easier and safer.
+        </p>
+
+        <div class="article-meta">
+          Guide · Technology Tips
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+  <div class="wrap">
+
+    <p>
+      © 2026 TechWise BD. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================================
+     MAIN JAVASCRIPT
+========================================================= -->
+
+<script src="js/main.js"></script>
+
+
+<!-- =========================================================
+     LOAD AI-GENERATED ARTICLES FROM articles.json
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const grid = document.getElementById("article-grid");
+
+  if (!grid) {
+    console.error("Article grid not found.");
+    return;
+  }
+
+
+  fetch("/techwise-bd/articles.json?cache=" + Date.now())
+
+    .then(function (response) {
+
+      if (!response.ok) {
+        throw new Error(
+          "Could not load articles.json. HTTP status: " +
+          response.status
+        );
+      }
+
+      return response.json();
+
+    })
+
+
+    .then(function (articles) {
+
+      console.log("TechWise BD articles.json loaded:", articles);
+
+
+      if (!Array.isArray(articles)) {
+
+        console.error(
+          "articles.json is not an array.",
+          articles
+        );
+
+        return;
+
+      }
+
+
+      articles.forEach(function (article) {
+
+        const card = document.createElement("article");
+
+        card.className = "article-card";
+
+        const category =
+          article.category || "technology";
+
+
+        card.setAttribute(
+          "data-category",
+          category.toLowerCase()
+        );
+
+
+        const tag =
+          category === "technology"
+            ? "Technology"
+            : category;
+
+
+        card.innerHTML = `
+
+          <span class="article-tag">
+            ${escapeHtml(tag)}
+          </span>
+
+
+          <h3>
+
+            <a href="${escapeHtml(article.url)}">
+
+              ${escapeHtml(article.title)}
+
+            </a>
+
+          </h3>
+
+
+          <p>
+            ${escapeHtml(article.summary || "")}
+          </p>
+
+
+          <div class="article-meta">
+
+            AI News ·
+            ${escapeHtml(tag)}
+
+          </div>
+
+        `;
+
+
+        grid.appendChild(card);
+
+      });
+
+
+      /*
+       * Re-apply filter buttons after
+       * dynamic articles have been added.
+       */
+
+      setupFilters();
+
+
+    })
+
+
+    .catch(function (error) {
+
+      console.error(
+        "TechWise BD article loading error:",
+        error
+      );
+
+    });
+
+});
+
+
+/* =========================================================
+   HTML ESCAPE
+========================================================= */
+
+function escapeHtml(value) {
+
+  return String(value || "")
+
+    .replace(/&/g, "&amp;")
+
+    .replace(/</g, "&lt;")
+
+    .replace(/>/g, "&gt;")
+
+    .replace(/"/g, "&quot;")
+
+    .replace(/'/g, "&#039;");
+
+}
+
+
+/* =========================================================
+   ARTICLE FILTER
+========================================================= */
+
+function setupFilters() {
+
+  const buttons =
+    document.querySelectorAll(".filter-btn");
+
+  const cards =
+    document.querySelectorAll(".article-card");
+
+
+  buttons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+      const selected =
+        button.getAttribute("data-filter");
+
+
+      buttons.forEach(function (btn) {
+
+        btn.classList.remove("active");
+
+        btn.setAttribute(
+          "aria-pressed",
+          "false"
+        );
+
+      });
+
+
+      button.classList.add("active");
+
+      button.setAttribute(
+        "aria-pressed",
+        "true"
+      );
+
+
+      cards.forEach(function (card) {
+
+        const category =
+          card.getAttribute("data-category");
+
+
+        if (
+          selected === "all" ||
+          category === selected
+        ) {
+
+          card.style.display = "";
+
+        } else {
+
+          card.style.display = "none";
+
+        }
+
+      });
+
+    });
+
+  });
+
+}
+
+</script>
+
+
+</body>
+
+</html>
