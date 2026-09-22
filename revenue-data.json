@@ -2,6 +2,20 @@
   "period": "all-time",
   "articles": [
     {
+      "slug": "meta-s-muse-outpaces-chatgpt-s-early-launch-meta-s-new-ai-agent-surpasses-competitor",
+      "title": "Meta's Muse Outpaces ChatGPT's Early Launch: Meta's New AI Agent Surpasses Competitor",
+      "category": "technology",
+      "contentType": "news",
+      "toolCategory": "ai-coding",
+      "ctaText": "Explore the remarkable growth of Meta's AI agent, Muse, and how it's outperforming its rival, ChatGPT, in the mobile launch. Learn more now!",
+      "cpaOfferId": "CPA_OFFER_PLACEHOLDER",
+      "published": "Mon, 21 Sep 2026 19:19:21 +0000",
+      "views": 0,
+      "ctaClicks": 0,
+      "conversions": 0,
+      "revenue": 0
+    },
+    {
       "slug": "discover-what-s-next-5-days-left-to-save-up-to-200-on-your-techcrunch-disrupt-2026-ticket",
       "title": "Discover what’s next: 5 days left to save up to $200 on your TechCrunch Disrupt 2026 ticket",
       "category": "technology",
