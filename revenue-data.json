@@ -1,0 +1,26 @@
+{
+  "period": "all-time",
+  "articles": [
+    {
+      "slug": "discover-what-s-next-5-days-left-to-save-up-to-200-on-your-techcrunch-disrupt-2026-ticket",
+      "title": "Discover what’s next: 5 days left to save up to $200 on your TechCrunch Disrupt 2026 ticket",
+      "category": "technology",
+      "contentType": "news",
+      "toolCategory": "best-list",
+      "ctaText": "Explore useful technology tools",
+      "cpaOfferId": "CPA_OFFER_PLACEHOLDER",
+      "published": "Mon, 21 Sep 2026 19:25:00 +0000",
+      "views": 0,
+      "ctaClicks": 0,
+      "conversions": 0,
+      "revenue": 0
+    }
+  ],
+  "offers": [],
+  "totals": {
+    "views": 0,
+    "ctaClicks": 0,
+    "conversions": 0,
+    "revenue": 0
+  }
+}
